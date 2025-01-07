@@ -1,9 +1,8 @@
-
 <!DOCTYPE html><html ondragstart="return false">
     <link rel="icon" type="image/x-icon" href="icon.svg">
-        <title>Game</title>
-        <body>
-            <script>
+    <title>Code</title>
+<body>
+    <script>
         document.addEventListener("keypress", function(map) {
   if (map.key === "1") {
     window.open("https://fontawesome.com/icons", "_blank");
@@ -22,28 +21,27 @@
             </script>
     <style>
         * {
+            cursor: url('RedGlow.cur'), auto;
             background-repeat: no-no-repeat;
-        background-size: 100%;
+            background-size: 100%; 
+            
         -webkit-user-select: none; /* Safari */
         -ms-user-select: none; /* IE 10 and IE 11 */
-        user-select: none; /* Standard syntax */}
+        user-select: none; /* Standard syntax */
+        }
+        
+        body {
+            background-image: url(back.jpg); 
+            background-size: 100% 100%; 
+            background-attachment: fixed;
+        }
 
-html, body {
-  height: 100%;
-  min-height: 300px;
-}
-body {
-    background-image: url(back.jpg); 
-    background-size: 100% 100%; 
-    background-attachment: fixed; 
-  font-family: sans-serif;
-  background: url(back.jpg);
-  transform: translate3d(0, 0, 0);
-}
+        body, html {
+            padding: 0;
+            margin: 0;
+	        overscroll-behavior: none;
+	        overflow: hidden;
+        }
+
     </style>
-        </body>
-
-
-
-
-</html>
+</body>
